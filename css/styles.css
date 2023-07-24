@@ -77,8 +77,6 @@ a {
 
 /*----------------HEADER STYLE------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 
@@ -91,6 +89,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-color {
@@ -105,13 +104,13 @@ a {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
   padding-left: 156px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 
 .header-items {
@@ -132,8 +131,8 @@ a {
   letter-spacing: 0.02em;
 }
 
-.header-list .header-item-nav:hover,
-.header-list .header-item-nav:focus {
+.header-item-nav:hover,
+.header-item-nav:focus {
   color: #404bbf;
 }
 
@@ -158,11 +157,7 @@ address {
 /*-------------------MAIN------------------*/
 
 /*-------------------STUDIO----------------*/
-.hero {
-  padding: 188px;
-}
-
-.service-order .solutions {
+.solutions {
   color: #fff;
   text-align: center;
   font-family: Roboto;
@@ -174,9 +169,10 @@ address {
   text-transform: capitalize;
   max-width: 496px;
   margin: 0 auto;
+  padding: 188px 0;
 }
 
-.service-order .service-btn {
+.service-btn {
   color: #fff;
   background-color: #4d5ae5;
   font-family: inherit;
@@ -191,6 +187,8 @@ address {
   border-radius: 4px;
   padding: 16px 32px;
   margin-top: 48px;
+  min-width: 169px;
+  height: 56px;
 }
 
 .service-btn:hover,
@@ -203,7 +201,7 @@ address {
 }
 
 .feature {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 .feature-links {
@@ -234,8 +232,7 @@ address {
 }
 
 .choice {
-  padding-top: 85px;
-  padding-bottom: 179px;
+  padding-bottom: 120px;
 }
 
 .choice-item {
@@ -246,10 +243,10 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .choice-link {
-  padding-top: 72px;
   display: flex;
   gap: 24px;
 }
@@ -260,6 +257,11 @@ address {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.container-team {
+  padding: 32px 0;
 }
 
 .team-main {
@@ -270,12 +272,10 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .team-link {
-  padding-top: 72px;
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
@@ -286,8 +286,9 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   text-align: center;
+  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -296,7 +297,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 8px;
   text-align: center;
 }
 
@@ -310,20 +310,16 @@ address {
 /*----------------PORTFOLIO---------------*/
 .service {
   padding-top: 96px;
-  padding-bottom: 72px;
 }
 
 .service-links-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 
-.service .service-button {
-  padding: 12px 24px;
-}
-
-.service-links-list .service-button {
+.service-button {
   color: #4d5ae5;
   background-color: #f4f4fd;
   font-family: inherit;
@@ -334,27 +330,41 @@ address {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower, #e7e9fc);
 }
 
-.service-links-list .service-button:hover,
-.service-links-list .service-button:focus {
+.service-button:hover,
+.service-button:focus {
   color: #fff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .service-menu {
   padding-bottom: 120px;
 }
 
+.container-service-menu {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .service-card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .service-item {
   width: calc((100% - 48px) / 3);
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
+}
+
+.service-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .service-title {
@@ -365,6 +375,7 @@ address {
   letter-spacing: 0.02em;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 8px;
 }
 
 .service-link {
@@ -392,6 +403,8 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -404,7 +417,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 17px;
   flex-wrap: wrap;
   display: flex;
   max-width: 264px;
@@ -412,5 +424,5 @@ address {
 
 .page-footer {
   background-color: #2e2f42;
-  padding: 101px;
+  padding: 100px 0;
 }
