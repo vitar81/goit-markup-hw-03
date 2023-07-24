@@ -17,8 +17,7 @@
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -104,18 +103,17 @@ a {
 .header-nav {
   display: flex;
   align-items: center;
-  padding-left: 156px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 
 .header-items {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-adress {
@@ -169,7 +167,6 @@ address {
   text-transform: capitalize;
   max-width: 496px;
   margin: 0 auto;
-  padding: 188px 0;
 }
 
 .service-btn {
@@ -198,6 +195,7 @@ address {
 
 .service-order {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .feature {
