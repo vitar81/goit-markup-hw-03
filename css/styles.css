@@ -10,6 +10,58 @@
   --cornflower: #e7e9fc;
 }
 
+/*--------------COMPONENTS STYLE-----------*/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*--------------RESET STYLE---------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*------------------BODY------------------*/
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -22,6 +74,12 @@ a {
 
 .list {
   list-style: none;
+}
+
+/*----------------HEADER STYLE-------------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /*-------------------HEADER----------------*/
@@ -37,6 +95,33 @@ a {
 
 .header-logo-color {
   color: #2e2f42;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+  padding-left: 156px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-items {
+  display: flex;
+  gap: 40px;
+}
+
+.header-adress {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-item-nav {
@@ -71,6 +156,9 @@ address {
 }
 
 /*-------------------STUDIO----------------*/
+.hero {
+  padding: 188px;
+}
 
 .service-order .solutions {
   color: #fff;
@@ -82,6 +170,9 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding: 0 auto;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 .service-order .service-btn {
@@ -93,6 +184,12 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 
 .service-btn:hover,
@@ -104,12 +201,28 @@ address {
   background-color: #2e2f42;
 }
 
+.feature {
+  padding-top: 120px;
+}
+
+.feature-links {
+  padding: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.feature-list {
+  width: calc((100% - 72px) / 4);
+}
+
 .feature-item {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  width: 264px;
 }
 
 .feature-text {
@@ -118,6 +231,11 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.choice {
+  padding-top: 85px;
+  padding-bottom: 179px;
 }
 
 .choice-item {
@@ -130,6 +248,20 @@ address {
   text-transform: capitalize;
 }
 
+.choice-link {
+  padding-top: 72px;
+  display: flex;
+  gap: 24px;
+}
+
+.choice-list {
+  width: calc((100% - 48px) / 3);
+}
+
+.team {
+  background-color: #f4f4fd;
+}
+
 .team-main {
   color: #2e2f42;
   text-align: center;
@@ -138,6 +270,14 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+}
+
+.team-link {
+  padding-top: 72px;
+  padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
 }
 
 .team-front {
@@ -146,6 +286,8 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  text-align: center;
 }
 
 .team-text {
@@ -154,17 +296,36 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.team {
-  background-color: #f4f4fd;
+  padding-top: 8px;
+  text-align: center;
 }
 
 .team-list {
   background-color: #fff;
+  width: calc((100% - 72px) / 4);
+  padding-bottom: 32px;
+  border-radius: 0 0 4px 4px;
 }
 
 /*----------------PORTFOLIO---------------*/
+.service {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.service-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.service-button {
+  width: calc((100% - 48px) /);
+}
+
+.service .service-button {
+  padding: 12px 24px;
+}
 
 .service-links-list .service-button {
   color: #4d5ae5;
@@ -175,6 +336,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
+  background-repeat: 4px;
 }
 
 .service-links-list .service-button:hover,
@@ -183,12 +346,28 @@ address {
   background-color: #404bbf;
 }
 
+.service-menu {
+  padding-bottom: 120px;
+}
+
+.service-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.service-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .service-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .service-link {
@@ -197,6 +376,13 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.concept {
+  margin-bottom: 32px;
 }
 
 /*-------------------FOOTER---------------*/
@@ -221,8 +407,13 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 17px;
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 264px;
 }
 
 .page-footer {
   background-color: #2e2f42;
+  padding: 101px;
 }
