@@ -100,6 +100,11 @@ a {
   gap: 40px;
 }
 
+.header-items {
+  display: flex;
+  gap: 40px;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -110,15 +115,8 @@ a {
   align-items: center;
 }
 
-.header-items {
-  display: flex;
-  gap: 40px;
-  padding: 24px 0;
-}
-
 .header-adress {
   margin-left: auto;
-  margin-right: auto;
 }
 
 .header-item-nav {
@@ -127,6 +125,8 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
 .header-item-nav:hover,
@@ -278,6 +278,12 @@ address {
   gap: 24px;
 }
 
+.team-list {
+  background-color: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
 .team-front {
   color: #2e2f42;
   font-size: 20px;
@@ -285,7 +291,6 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -298,16 +303,10 @@ address {
   text-align: center;
 }
 
-.team-list {
-  background-color: #fff;
-  width: calc((100% - 72px) / 4);
-  padding-bottom: 32px;
-  border-radius: 0 0 4px 4px;
-}
-
 /*----------------PORTFOLIO---------------*/
 .service {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .service-links-list {
@@ -338,9 +337,12 @@ address {
   background-color: #404bbf;
   border: 1px solid transparent;
 }
-
-.service-menu {
-  padding-bottom: 120px;
+/*---hmm*/
+.service-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .container-service-menu {
@@ -349,20 +351,9 @@ address {
   border-top: none;
 }
 
-.service-card-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-
 .service-item {
   width: calc((100% - 48px) / 3);
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
-}
-
-.service-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .service-title {
@@ -371,8 +362,6 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-right: 16px;
   margin-bottom: 8px;
 }
 
@@ -382,13 +371,6 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.concept {
-  margin-bottom: 32px;
 }
 
 /*-----------------FOOTER-------------------*/
